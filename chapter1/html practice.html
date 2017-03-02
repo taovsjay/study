@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>百度就是屌</title>
-	</head>
+</head>
 <body>
 	<div>
 		<h1>Baidu百度</h1>
@@ -84,53 +84,72 @@
 					<li>最佳男演员奖</li>
 					<li>最佳女演员奖</li>
 				</ol>
-				<caption>这里有文字有文字有文字</caption>
-				<table>
+				
 				<table border="1">
-						<tbody>
-							<tr>
-								<td>表头</td>
-								<td>表头</td>
-								<td>表头</td>
-							</tr>
-							<tr>
-								<td>表内容单元格</td>
-								<td>表内容单元格</td>
-								<td>操作</td>
-							</tr>
-							<tr>
-								<td>表内容单元格</td>
-								<td>表内容单元格</td>
-								<td>操作</td>
-							</tr>
-							<tr>
-								<td>表内容单元格</td>
-								<td>表内容单元格</td>
-								<td>操作</td>
-							</tr>
-							<tr>
-								<td>表内容单元格</td>
-								<td>表内容单元格</td>
-								<td>操作</td>
-							</tr>
-							<tr>
-								<td>总计</td>
-								<td colspan="2">1000</td>
-							</tr>
-						</tbody>
-					</table>
+					<tbody>
+						<tr>
+							<td>表头</td>
+							<td>表头</td>
+							<td>表头</td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表内容单元格</td>
+							<td>表内容单元格</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>总计</td>
+							<td colspan="2">1000</td>
+						</tr>
+					</tbody>
 				</table>
 				<h3>这是侧栏标题</h3>
 				<h3>侧栏注册窗口标题</h3>
-				<form>请输入邮箱地址：
-					<input type="text" name="邮箱" value="文本输入" />
-				</form></p>
+				<form  method="post" action="save.php">
+					<label for="email_txt">请输入邮箱地址：</label>
+					<input type="text" id="email_txt" name="email" placeholder="文本输入" />
+					<p>邮箱地址请按要求格式输入</p>
+					<label for="email_1">请输入密码：</label>
+					<input type="password" id="email_1" name="email" placeholder="文本输入" />
+					<label for="email_2">请重复输入密码：</label>
+					<input type="password" id="email_2" name="email" placeholder="文本输入" />
 
-
-
-
-
-
-
+					<p>密码为6-16位英文数字</p>
+					<label>性别:</label>
+					<label for="male">男</label>
+					<input type="radio" value="1" checked="checked" id="male"  name="gender" />
+					<label for="woman">女</label>
+					<input type="radio" value="2" id="woman" name="gender" />
+					<label>城市:</label>
+					<select>
+						<option value="上海">上海</option>
+						<option value="北京" selected="selected">北京</option>
+						<option value="广州">广州</option>
+						<option value="深圳">深圳</option>
+					</select>
+					<label>爱好：</label>
+					<input type="checkbox" id="movement" name="checkboxlove" value="运动" /><label for="movement">运动</label>
+					<input type="checkbox" id="art" name="checkboxlove" value="艺术" /><label for="art">艺术</label>
+					<input type="checkbox" id="science" name="checkboxlove" value="科学" /><label for="science">科学</label>
+					<label for="Personal profile" >个人简介：</label>
+					<textarea cols="25" rows="2" placeholder="在这里输入内容..." id="Personal profile"></textarea>
+					<input type="submit" value="确定提交"  name="submit" />
+				</form>
+				<p>版权所有©</p>
 			</body>
 			</html>
